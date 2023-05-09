@@ -1,5 +1,7 @@
 body{
-    background-image: url(Imagenes/Fondo_Negro_4.png);
+    background-image:linear-gradient(rgba(27, 6, 27, 0.493),rgba(46, 35, 107, 0.658),rgba(73, 18, 73, 0.596)), 
+    url(Imagenes/Fondo_Negro_4.png) ;
+    height: 100vh;
 }
 
 
@@ -43,10 +45,12 @@ header{
 }
 
 .mainTitle{
+    width: 940px;
     display: block;
     color: white;
     font-size: 100px;
-    margin: 0 25%;
+    margin: 0 auto;
+    text-align: center;
     
 
 }
@@ -206,22 +210,27 @@ textarea:focus{
 
 @media screen and (max-width:600px){
 
-   
 
     body{
-        background-image: url(Imagenes/Fondo_Negro_4.png);
-        box-sizing: border-box;
-        height: 600px;
-        width: 100%;
-        min-width: 700px;
+        background-image:linear-gradient(rgba(27, 6, 27, 0.493),rgba(57, 35, 107, 0.658),rgba(114, 17, 114, 0.596)), 
+        url(Imagenes/Fondo_Negro_4.png) ;
+        background-size: 20%;
+        max-height: 100vh;
+        overflow-y: hidden;
+        width: 100vh;
+        
+        
     }
+
+    
     
     .contenedor-div{
         display: block;
-        width: 90%;
-        min-width: 540px;
-        margin: 0 auto;
+        width: auto;
+        min-width: 600px;
+        margin: 0 5%;
         border: .1 solid transparent;
+        
     }
     
     .logo{
@@ -260,16 +269,19 @@ textarea:focus{
         
         /* display: inline-block;
         margin-left: 5%; */
-        width: 100%;
+        width: auto;
     }
     
     .mainTitle{
         display: block;
+        width: 100vh;
         color: white;
         font-size: 80px;
-        text-align: justify;
+        text-align: center;
         justify-content: center;
-        margin: 0 0 100px 21%;
+        margin: 0 0 100px 0;
+        
+
           
     }
 
@@ -277,7 +289,8 @@ textarea:focus{
         display: block;
         content: "(Mobile)";
         position: relative;
-        left: 10%;
+        text-align: center;
+        width: 100vh ;
         
     }
 
@@ -288,7 +301,7 @@ textarea:focus{
         margin-left: 10%;
         margin-bottom: 40px;
         justify-content: center;
-        width: 536px;
+        width: 80%;
         height: 350px;
         
     }
@@ -349,7 +362,7 @@ textarea:focus{
         display: block;
         flex-direction: column;
         height: 300px;
-        width: 600px;
+        width: 90%;
         margin: 0 0 0 15%;
         align-items: center;
         justify-content: center;
