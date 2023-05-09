@@ -211,14 +211,22 @@ textarea:focus{
         background-image: url(Imagenes/Fondo_Negro_4.png);
         height: 600px;
         width: 100%;
+        min-width: 600px;
     }
     
-    
+    .contenedor-div{
+        display: block;
+        width: 90%;
+        min-width: 540px;
+        margin-left: 10%;
+        margin-right: 10%;
+        border: .1 solid transparent;
+    }
     
     .logo{
         display: inline-block;
-        height: 70px;
-        width: 70px;
+        height: 100px;
+        width: 100px;
         margin-top: 5%;
         margin-left: 7%;
         background-image:linear-gradient(rgba(27, 6, 27, 0.493),rgba(107, 35, 107, 0.658),rgba(73, 18, 73, 0.596)), 
@@ -233,18 +241,15 @@ textarea:focus{
     
     .logo2{
         /* display: inline-block;  usando float no es necesario el inline-block*/
-        position: absolute;
-        top: 0%;
-        right: 0;
-        height: 70px;
-        width: 70px;
+        height: 100px;
+        width: 100px;
         margin-top: 5%;
         margin-right: 0%;
         background-image:linear-gradient(rgba(27, 6, 27, 0.493),rgba(107, 35, 107, 0.658),rgba(73, 18, 73, 0.596)), 
         url(Imagenes/giphy.gif) ;
         background-size: contain;
         border-radius: 100px;
-        /* float: right; */
+        float: right;
         border: 2px black solid;
         box-shadow: 0 0 15px 5px black;
     }
