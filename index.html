@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Desafío: Encriptador</title>
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="animacion.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    
+    <div class="logo"></div>
+    <div class="logo2"></div>
+    
+    <!-- <img class="logo" src="Imagenes/giphy.gif"> -->
+    <!-- <img class="logo2" src="Imagenes/giphy.gif"> -->
+    
+    
+
+
+    <header>   
+
+    <h1 class="mainTitle">Secret Code</h1>
+
+    </header>
+
+    <div class="flex-container">
+
+        <div class="boxTexto">
+            <textarea class="textA" id="ingresoTexto1" placeholder="Ingrese su Texto todo en minúscula y sin acentos" ></textarea>
+            <button id="buttonEncriptar" class="botones">Encriptar</button>
+        </div>
+
+        <div class="boxTexto">
+            <textarea class="textA" id="ingresoTexto2" placeholder="Ingrese su Texto todo en minúscula y sin acentos"></textarea>
+            <button id="buttonDesencriptar" class="botones">Desencriptar</button>
+        </div>
+
+    </div>
+
+    <div class="ultimaBox">
+        <textarea class="textoModificado" id="descifrado"></textarea>
+        <button id="buttonCopy" class="copy">COPY</button>
+    </div>
+
+
+
+    <footer>
+        <div class="footer1">
+            <p class="pie1"> Baltanás Marcelo Alejandro</p>
+        </div>
+
+        <div class="footer2">
+            <p class="pie2"> Challenge ONE: Primer Desafío</p>
+        </div>
+    </footer>
+
+
+    <script src="logica.js"></script>
+</body>
+
+
+</html>
