@@ -109,7 +109,7 @@ textarea:focus{
 .botones{
     width: 60%;
     margin-left: 21%;
-    
+    cursor: pointer;
     height: 20%;
     border: 3px blue solid;
     border-radius: 12px;
@@ -153,7 +153,8 @@ textarea:focus{
     border-radius: 12px;
     writing-mode: vertical-rl;
     text-orientation: mixed;
-    font-size: 0.8em;
+    font-size: 0.5em;
+    cursor: pointer;
 }
 
 .footer1{
@@ -208,7 +209,7 @@ textarea:focus{
 
 
 
-@media screen and (max-width:600px){
+@media screen and (max-width:700px){
 
 
     body{
@@ -216,7 +217,6 @@ textarea:focus{
         url(Imagenes/Fondo_Negro_4.png) ;
         background-size: 20%;
         max-height: 100vh;
-        overflow-y: hidden;
         width: 100vh;
         
         
@@ -282,7 +282,6 @@ textarea:focus{
         margin: 0 0 100px 0;
         
 
-          
     }
 
     .mainTitle:after{
@@ -382,7 +381,7 @@ textarea:focus{
         font-size: 30px;
         font-weight: bold;
         color: white;
-        margin-left: 5%;
+        margin-left: 15%;
         margin-bottom: 20px;
         
     }
@@ -394,10 +393,10 @@ textarea:focus{
         height: 50px ;
         border: 3px blue solid;
         border-radius: 12px;
-        writing-mode: vertical-rl;
-        text-orientation: mixed;
+        /* writing-mode: vertical-rl;
+        text-orientation: mixed; */
         font-size: 0.8em;
-        margin-left: 5%;
+        margin-left: 15%;
     }
 
 
@@ -447,4 +446,90 @@ textarea:focus{
     }
     
 
+}
+
+
+/* --------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------- */
+
+@media screen and (orientation: landscape) and (max-width:740px){
+    html{
+        width: 100vw;
+    }
+    
+    .logo2{
+        margin-right: -40px;
+    }
+
+    .mainTitle{
+        width: 100vw;
+    }
+
+    .mainTitle:after{
+        width: 100vw;
+    }
+
+    .flex-container{
+        width: 100%;
+        min-width: 300px;
+        justify-content: center;
+        margin: 0 auto;
+        
+    }
+
+    .boxTexto{
+        width: 500px;
+        margin: 0 auto;
+    }
+}
+
+
+
+
+/* --------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------- */
+
+@media screen and (max-width:920px){
+    html{
+        width: 100vw;
+        /* height: 100vh; */
+    }
+
+    .mainTitle{
+        margin-bottom: 150px;
+        font-size: 8em;
+    }
+
+    .flex-container{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        height: min-content;
+        margin-top: 20%;
+        margin-left: 10%;
+        margin-bottom: 5%;
+    }
+
+    .boxTexto{
+        height: 250px;
+        width: 80%;
+        margin: 0% 10% 10% 10%;
+        
+    }
+
+    .textA{
+        margin-top: 5%;
+        height: 50%;
+    }
+
+    .botones{
+        height: 20%;
+        margin-top: 10px;
+    }
+
+    .ultimaBox{
+        margin-left: 5%;
+    }
 }
